@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(64, 64, 163);
+}
+
+h1 {
+  color: slategray;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-size: 45px;
+  text-align: center;
+}
+
+h2 {
+  color: slategray;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-size: 28px;
+  text-align: left;
+}
+
+ul {
+  border: 3px solid purple;
+}
+
+li {
+  list-style-type: none;
+  text-shadow: 2px 2px purple;
+}
+
+#discList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+}

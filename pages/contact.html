@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./CSS/contact.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+
+    <form>
+      <label for="username">enter user name</label>
+      <input type="text" id="username" name="username" />
+      <br /><br />
+      <label for="email">enter email</label>
+      <input type="email" id="email" name="email" />
+      <br /><br />
+      <label for="password">enter password</label>
+      <input type="password" id="password" name="password" />
+      <br /><br />
+
+      <p>Select Your Age</p>
+      <input type="radio" name="age" value="0-25" id="optionOne" />
+      <label for="optionOne">0-25</label>
+      <input type="radio" name="age" value="26-50" id="optionTwo" />
+      <label for="optionTwo">26-50</label>
+      <input type="radio" name="age" value="50+" id="optionThree" />
+      <label for="optionThree">50+</label>
+
+      <br /><br />
+      <label for="question">Security Question</label>
+      <select name="question" id="question">
+        <option value="qOne">What is your favorite color?</option>
+        <option value="qTwo">What is your pet's name?</option>
+        <option value="qThree">Make and Model of your first car?</option>
+      </select>
+      <br /><br />
+      <label for="answer">Security Question Answer</label>
+      <input type="text" id="answer" />
+      <br /><br />
+      <label for="bio">Your Biography</label>
+      <br />
+      <textarea
+        name="bio"
+        id="bio"
+        cols="30"
+        rows="10"
+        placeholder="About You"
+      ></textarea>
+      <br />
+      <input type="submit" value="submit form" />
+    </form>
+  </body>
+</html>
