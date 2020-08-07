@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(81, 81, 197);
+  background-color: rgb(100, 100, 129);
   padding: 0px;
   margin: 0px;
 }
@@ -76,6 +76,7 @@ input#menuButton {
 
 input:checked ~ #menuContentContainer {
   transform: translateY(0px);
+  transition: transform 500ms;
 }
 
 /* Moved media queries to the bottom so that this way specificity isnt a worry. Because its now at the bottom just its place in the file gives it precedence over previous code if it meets the screen width specifications */
