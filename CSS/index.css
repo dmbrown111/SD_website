@@ -1,13 +1,3 @@
-/* Update log:
-
-* Changed element id names to be more semantic and removed unecessary ids for better readability
-* Removed all code except Nav to focus on just one element
-* Moved font stylings to anchor tags and moved  text inside anchor tags, this is the correct pattern. 
-
-*/
-
-/* Codepen Defaults and Background Color */
-
 body {
   background-color: rgb(100, 100, 129);
   padding: 0px;
@@ -100,12 +90,6 @@ body {
 input#menuButton {
   display: none;
 }
-
-/* input:checked ~ #menuContentContainer {
-  transform: translateY(0px);
-} */
-
-/* Moved media queries to the bottom so that this way specificity isnt a worry. Because its now at the bottom just its place in the file gives it precedence over previous code if it meets the screen width specifications */
 
 /* When size is mobile then ... */
 
