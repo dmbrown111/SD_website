@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(100, 100, 129);
+  background-color: rgb(241, 241, 241);
   padding: 0px;
   margin: 0px;
 }
@@ -19,7 +19,7 @@ body {
   border: 1px solid rgb(58, 59, 59);
   position: relative;
   z-index: 2;
-  background-color: rgb(100, 100, 129);
+  background-color: rgb(241, 241, 241);
 }
 
 #burgerButton.open span:nth-child(1) {
@@ -55,16 +55,21 @@ body {
   position: relative;
   z-index: 1;
   transform: translateY(0px);
+  display: flex;
 }
 
 #menuContentContainer.open {
   transform: translateY(0px);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(241, 241, 241);
 }
 
 #menuContent {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
 }
@@ -105,5 +110,104 @@ input#menuButton {
   #menuContentContainer {
     transform: translateY(-305px);
     transition: transform 500ms;
+  }
+
+  #bGImage {
+    margin-top: -213px;
+  }
+}
+/* Main Banner */
+#bGImage {
+  background-image: url("../assets/BGimage.png");
+  background-color: rgb(241, 241, 241);
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+
+  /* is this negative margin ok? */
+}
+
+.b_g_text {
+  text-align: center;
+  position: absolute;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+h1 {
+  display: flex;
+  flex-direction: row;
+}
+
+h2 {
+  font-size: 80px;
+}
+.b_g_text_two {
+  left: 30%;
+  transform: translate(20%, -50%);
+}
+#spanOne {
+  color: #000000;
+}
+
+#spanTwo {
+  color: #000000;
+}
+
+/* page slider */
+
+#pageSliderContainer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pageSlider {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 6%;
+  min-width: 50px;
+  max-width: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  /* content: "/9679"; */
+  /* tried it insert circle via unicode in CSS, why didn't
+  this work? */
+}
+
+#pointer {
+  font-size: 220%;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 550px) {
+  .b_g_text {
+    transform: translate(-50%, 50%);
+  }
+
+  .b_g_text_two {
+    color: black;
+    transform: translate(8%, -50%);
+  }
+
+  #spanOne {
+    color: #ffffff;
+  }
+
+  #pageSliderContainer {
+    display: none;
   }
 }
