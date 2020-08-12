@@ -2,44 +2,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link href="./CSS/index.css" rel="stylesheet" />
     <script src="index.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <header id="main">
-      <nav id="main">
-        <div id="burgerButtonContainer">
-          <input type="checkbox" id="menuButton" />
-          <label id="burgerButton" for="menuButton">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+    <nav id="main">
+      <div id="burgerButtonContainer">
+        <input type="checkbox" id="menuButton" />
+        <label id="burgerButton" for="menuButton">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
-          <div id="menuContentContainer">
-            <ul id="menuContent">
-              <li><a href="disciplines.html">Disciplines</a></li>
-              <li><a href="./dropzones.html">Dropzones</a></li>
-              <li><a href="#">Where to Start</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-            </ul>
-          </div>
+        <div id="menuContentContainer">
+          <ul id="menuContent">
+            <li><a href="disciplines.html">Disciplines</a></li>
+            <li><a href="./dropzones.html">Dropzones</a></li>
+            <li><a href="#">Where to Start</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <div id="bGImage">
-      <div class="b_g_text">
-        <h1>
-          RAR
-          <div id="spanOne">E</div>
-          FIED
-        </h1>
-        <h2 class="b_g_text_two">A<span id="spanTwo">I</span>R</h2>
       </div>
-    </div>
-    <div id="pageSliderContainer">
-      <div id="pageSlider"><div id="pointer">&#9660;</div></div>
+    </nav>
+    <banner id="banner">
+      <div id="bannerImage">
+        <div id="rarefied" class="site_font bold">
+          <span>RAR</span>
+          <span id="letterOne">E</span>
+          <span>FIED</span>
+        </div>
+        <div id="air" class="site_font bold">
+          <span>A</span>
+          <span id="letterTwo">I</span>
+          <span>R</span>
+        </div>
+      </div>
+    </banner>
+    <div id="pageSlider">
+      <div id="pageSliderButton"><div id="sliderButtonIcon">&#9660;</div></div>
     </div>
     <script src="/JS/index.js"></script>
   </body>
