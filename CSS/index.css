@@ -75,7 +75,6 @@ body {
   transform: translateY(0px);
   display: flex;
   align-items: flex-start;
-  transition: transform 500ms;
 }
 
 #menuContentContainer.open {
@@ -121,7 +120,7 @@ input#menuButton {
 #banner {
   display: flex;
   flex-direction: column;
-  font-size: 60px;
+  font-size: 110px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(255, 251, 251);
 }
@@ -137,14 +136,25 @@ input#menuButton {
   z-index: -1;
 }
 
-#rarefied {
+#bannerTitle {
   margin-top: 20%;
-  margin-left: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner_title_word {
+  display: flex;
+  justify-content: center;
+}
+
+#rarefied {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(49, 207, 173, 0.5));
 }
 
 #air {
-  margin-top: 2%;
-  margin-left: 45%;
+  padding-left: 17%;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(49, 207, 173, 0.5));
 }
 
 #letterOne {
@@ -163,11 +173,16 @@ input#menuButton {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -35px;
+  position: relative;
+  z-index: 2;
 }
 
 #pageSliderButton {
   border: 1px solid #000000;
   border-radius: 50%;
+  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px rgb(199, 198, 198);
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
   width: 6%;
   min-width: 70px;
   min-height: 70px;
@@ -179,11 +194,45 @@ input#menuButton {
   cursor: pointer;
   position: relative;
   z-index: 1;
+  background-color: rgb(241, 241, 241);
 }
 
 #sliderButtonIcon {
   font-size: 220%;
   margin-top: 20px;
+}
+
+#pageSliderButton:active {
+  background-color: #b3b0b0;
+  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px rgb(141, 139, 139);
+}
+
+.bouncy {
+  animation: bouncy 8s infinite linear;
+  position: relative;
+}
+@keyframes bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
 }
 
 @media only screen and (max-width: 970px) {
@@ -197,6 +246,7 @@ input#menuButton {
 
   #menuContentContainer {
     transform: translateY(-305px);
+    transition: transform 500ms;
     display: none;
     position: absolute;
     z-index: 2;
@@ -205,14 +255,19 @@ input#menuButton {
 }
 
 @media only screen and (max-width: 550px) {
+  #bannerImage {
+    background-image: url("../assets/ff.jpg");
+    margin-top: -20%;
+  }
   #rarefied {
-    margin-top: 125%;
-    margin-left: 30%;
+    margin-top: 93%;
+    margin-left: 10%;
   }
 
   #air {
     color: #000000;
     bottom: -50%;
+    margin-left: 28%;
   }
 
   #letterOne {

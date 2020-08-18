@@ -14,13 +14,13 @@
     <nav id="main">
       <div id="burgerButtonContainer">
         <input type="checkbox" id="menuButton" />
-        <label id="burgerButton" for="menuButton">
+        <label id="burgerButton" class="nav_toggle" for="menuButton">
           <span></span>
           <span></span>
           <span></span>
         </label>
 
-        <div id="menuContentContainer">
+        <div id="menuContentContainer" class="nav_toggle">
           <ul id="menuContent">
             <li><a href="disciplines.html">Disciplines</a></li>
             <li><a href="./dropzones.html">Dropzones</a></li>
@@ -30,21 +30,25 @@
         </div>
       </div>
     </nav>
+
     <banner id="banner">
       <div id="bannerImage">
-        <div id="rarefied" class="site_font bold">
-          <span>RAR</span>
-          <span id="letterOne">E</span>
-          <span>FIED</span>
-        </div>
-        <div id="air" class="site_font bold">
-          <span>A</span>
-          <span id="letterTwo">I</span>
-          <span>R</span>
+        <div id="bannerTitle">
+          <span id="rarefied" class="site_font bold banner_title_word">
+            <span>RAR</span>
+            <span id="letterOne">E</span>
+            <span>FIED</span>
+          </span>
+          <span id="air" class="site_font bold banner_title_word">
+            <span>A</span>
+            <span id="letterTwo">I</span>
+            <span>R</span>
+          </span>
         </div>
       </div>
     </banner>
-    <div id="pageSlider">
+
+    <div id="pageSlider" class="bouncy">
       <div id="pageSliderButton"><div id="sliderButtonIcon">&#9660;</div></div>
     </div>
     <script src="/JS/index.js"></script>
